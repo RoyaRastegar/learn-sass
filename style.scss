@@ -1,5 +1,64 @@
+* {
+  color: inherit;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
 h1 {
-  a {
-    color: green;
-  }
+  border: 0;
+  border-top: 1px solid #efefef;
+}
+img {
+  max-width: 100%;
+}
+/* theme colors */
+$primary: #326dee;
+$secondery: #1ac888;
+$error: #d32752;
+$info: #f6c31c;
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+// bordering
+$base-border-redius: 20px;
+$base-border-thickness: 2px;
+h1 {
+  color: $primary;
+  margin-bottom: $base-margin;
+}
+a {
+  color: $secondery;
+}
+button {
+  color: white;
+  border: 0;
+  background-color: $primary;
+  border-radius: $base-border-redius;
+  padding: $base-padding;
+}
+.error {
+  color: $error;
+  border: solid;
+  border-color: $error;
+  border-radius: $base-border-redius;
+  margin: $base-margin;
+  border-width: $base-border-thickness;
+  padding: $base-padding;
+}
+.notification {
+  color: $info;
+  border: solid;
+  border-color: $info;
+  border-radius: $base-border-redius;
+  margin: $base-margin;
+  border-width: $base-border-thickness;
+  padding: $base-padding;
 }
